@@ -3,7 +3,6 @@
 #--------------------------------------------------
 import torch
 from sklearn import linear_model
-#from sklearn.svm import LinearSVC
 from sklearn.metrics import confusion_matrix
 import numpy as np
 from random import sample
@@ -69,12 +68,5 @@ for i in range(10):
 #--------------------------------------------------
 
 end_time = datetime.now()
-
-#y_actual = y_actual/len(y_actual)
-#y_pred = [y[0] for y in y_pred]
-#y_pred = y_pred/len(y_pred)
-#cfs_mtx = confusion_matrix(y_actual, y_pred)
-#print(cfs_mtx)
-
 print('Average Accurcary: ', sum(results)/len(results))
 print('Time for Total Script: ', end_time-start_time)
